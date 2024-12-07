@@ -1,0 +1,7 @@
+DIP encourages depending on abstractions (interfaces or abstract classes) rather
+than concrete implementations.
+High-level modules (policies, business logic) should not depend on low-level modules (details, implementations).
+Both should depend on abstractions (interfaces or abstract classes).
+Abstractions should not depend on details. Instead, details should depend on abstractions.
+This principle helps achieve loose coupling between software components, making the system easier to maintain,
+ extend, and test.

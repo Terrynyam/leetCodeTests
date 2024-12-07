@@ -1,0 +1,3 @@
+A class should have only one reason to change, meaning it should have only one responsibility.
+Invoice class handles only invoice-related calculations, while InvoicePrinter handles printing,
+adhering to SRP.

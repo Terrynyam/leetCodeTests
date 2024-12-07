@@ -1,0 +1,20 @@
+interface Bird {
+    void fly();
+}
+
+class Sparrow implements Bird {
+    @Override
+    public void fly() {
+        System.out.println("Sparrow is flying");
+    }
+}
+
+class Ostrich implements Bird {
+    @Override
+    public void fly() {
+        throw new UnsupportedOperationException("Ostrich cannot fly");
+    }
+}
+---
+Problem:
+Ostrich violates the LSP because it cannot fulfill the contract of the Bird interface (fly method)

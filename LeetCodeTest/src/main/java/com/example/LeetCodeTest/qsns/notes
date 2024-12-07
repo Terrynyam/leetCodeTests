@@ -1,0 +1,30 @@
+Suggestions for Improving a Class That Implements an Interface:
+-----------------------------------------------------------------
+
+1. Adhere to the Interface’s Contract:
+Ensure all methods are implemented correctly and fulfill the contract of the interface.
+The class should provide meaningful implementations.
+
+2. Use Default Methods (Java 8+):
+If appropriate, move reusable logic to a default method in the interface to avoid duplicate
+code across implementations.
+
+3. Use Dependency Injection:
+Inject dependencies (like services or utilities) instead of hardcoding them.
+This improves testability and flexibility.
+
+4. Use Composition Instead of Inheritance:
+When a class implements an interface, it should use composition instead of inheritance.
+This allows the class to have a more flexible and extensible design.
+If the interface methods require complex behavior, delegate tasks to helper classes rather than
+having a single class do everything.
+Composition over inheritance is a design principle that suggests that a class should achieve
+functionality by delegating tasks to other objects (composition) rather than inheriting from a
+superclass. In the context of implementing interfaces, this principle can help keep classes modular,
+maintainable, and flexible.
+
+
+
+5. Ensure SOLID Principles:
+Single Responsibility: The class should only do one thing related to the interface.
+Open/Closed Principle: The class should be open for extension but closed for modification.

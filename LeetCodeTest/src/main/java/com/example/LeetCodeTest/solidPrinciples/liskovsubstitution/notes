@@ -1,0 +1,16 @@
+Objects of a superclass should be replaceable with objects of a subclass without affecting the correctness of the
+program.
+In other words, if you have a base class and a derived class, you should be able to substitute the derived class
+wherever the base class is used, without introducing errors or unexpected behavior.
+--
+Key Rules for LSP:
+Method signatures: Subclasses should not change the method signatures of their parent class.
+Behavior: Subclasses should not override methods in a way that breaks the expected behavior of the base class.
+Preconditions and postconditions: A subclass should not strengthen preconditions or weaken postconditions.
+----
+LSP ensures substitutability: A subclass should behave in a way that its use in place of a superclass does
+not break the program.
+Behavioral integrity: Subclasses should not alter expected behaviors defined by the base class.
+Focus on design: Use composition or more specific abstractions if inheritance would violate LSP.
+Good design leads to flexibility: Following LSP results in better-structured, maintainable, and extensible
+code.
